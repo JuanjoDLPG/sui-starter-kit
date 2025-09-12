@@ -1,6 +1,5 @@
 [package]
-name = "Intro"
-version = "0.0.0"
+name = "Proyecto"
 edition = "2024.beta"
 
 [addresses]
