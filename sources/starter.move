@@ -37,11 +37,11 @@ module starter :: taller{
    public fun agregar_cliente(taller: &mut Taller, id: u64, nombre_Cliente: String, modelo_Vehiculo: u8, color: String, reparado: bool,estado: String){
         assert! (!taller.cliente.contains(&id),ID_YA_EXISTE);
 
-        let cliente=Cliente {
+        let cliente = Cliente {
             nombre_Cliente,
             modelo_Vehiculo,
             color,
-            diagnosticado: true,
+            reparado: true,
             estado,
         };
         taller.cliente.insert(id, cliente);
@@ -53,3 +53,4 @@ public fun eliminar_cliente(taller: &mut Taller, id: u64) {
 }
 
 }
+
